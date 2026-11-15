@@ -1,6 +1,6 @@
 FROM python:3.12-slim
 WORKDIR /app
 RUN pip install --no-cache-dir pg8000
-COPY app.py .
+COPY appv2.py .
 EXPOSE 8090
 CMD ["python3", "app.py"]
